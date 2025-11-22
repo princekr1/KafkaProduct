@@ -1,0 +1,30 @@
+<!-- C:/Users/princ/project/KafkaProject/productsMicroservice/pom.xml -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Parent Project Coordinates -->
+	<groupId>com.example</groupId>
+	<artifactId>products-microservice-parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<!-- CRITICAL: This tells Maven this is a parent/aggregator project -->
+	<packaging>pom</packaging>
+
+	<name>products-microservice-parent</name>
+
+	<!-- CRITICAL: This section lists the sub-module directories -->
+	<modules>
+		<module>core</module>
+		<module>EmailNotificationMicroservice</module> <!-- Replace with your other module's folder name -->
+		<module>productsMicroservice</module> <!-- Replace with your other module's folder name -->
+	</modules>
+
+	<!-- You can define shared dependencies and properties for all modules here -->
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
+
+</project>
